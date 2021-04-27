@@ -1,3 +1,4 @@
+/*
 #include<iostream>
 #include<vector>
 #include<algorithm>
@@ -6,7 +7,7 @@
 using namespace std;
 class Solution {
 public:
-    /*
+    //first method:sort
     vector<int> getLeastNumbers(vector<int>& arr, int k) {
         vector<int>ans;
         sort(arr.begin(),arr.end());
@@ -15,8 +16,7 @@ public:
         }
         return ans;
     }
-    */
-   /*
+   //second method
    int parttition(vector<int>&nums,int l,int r){
        int pivot =nums[l];
        while(l<r){
@@ -51,7 +51,7 @@ public:
        ans.assign(arr.begin(),arr.begin()+k);
        return ans;
    }
-   */
+   // third method
   int parttition(vector<int>&nums,int l,int r){
        int pivot =nums[l];
        while(l<r){
@@ -87,3 +87,5 @@ public:
        return ans;
    }
 };
+
+*/
