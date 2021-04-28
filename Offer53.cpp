@@ -42,14 +42,14 @@ public:
             if(nums[mid]>=target)j=mid-1;
             else i=mid+1;
         }
-        int r =i;
+        int l =i;
         i=0,j=nums.size()-1,mid=0;
         while(i<=j){
             mid = (j-i)/2+i;
             if(nums[mid]>target)j=mid-1;
             else i=mid+1;
         }
-        int l=i;
-        return l-r;  
+        int r=j;
+        return r-l-1;  
     }
 };
