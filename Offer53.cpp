@@ -1,9 +1,10 @@
+/*
 #include<iostream>
 #include<vector>
 using namespace std;
 class Solution {
 public:
-    /*int search(vector<int>& nums, int target) {
+    int search(vector<int>& nums, int target) {
         //method one:4s-16s
         int ans=0;
         for(int i=0;i<nums.size();i++){
@@ -33,7 +34,7 @@ public:
         }
         return ans;  
     }
-    */
+    
    int search(vector<int>& nums, int target) {
         //method three:8-16s
         int i=0,j=nums.size()-1,mid=0;
@@ -53,3 +54,5 @@ public:
         return r-l-1;  
     }
 };
+
+*/
