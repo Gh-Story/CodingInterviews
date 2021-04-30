@@ -1,4 +1,4 @@
 # CodingInterviews
-a project for 剑指ffer
+a project for 剑指Offer
 CodingInterviews
 ## testing submit
