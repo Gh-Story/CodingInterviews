@@ -1,3 +1,4 @@
+/*
 #include<iostream>
 #include<vector>
 #include<stack>
@@ -27,4 +28,6 @@ public:
 
         }
         return ans[ans.size()-k];
-};
+    }
+}; 
+*/  
