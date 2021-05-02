@@ -31,6 +31,6 @@ public:
             string tmp = res[i]+" ";
             ans = tmp+ans;
         }
-        return ans;
+        return ans.substr(0,ans.size()-1);
     }
 };
