@@ -3,28 +3,18 @@
 using namespace std;
 class Solution {
 public:
-    int res = 1e9+7;
     int cuttingRope(int n) {
         if(n<4)return n-1;
-        unsigned int ans=1;
+        int ans=0;
         if(n%3==1){
             int c = n/3-1;
-            for(int i=0;i<c;i++){
-                ans = (ans * 3)%res;
-            }
-            ans = (ans * 4)%res;
+            ans = pow(3,c)*4;
         }else if(n%3==2){
             int c = n/3;
-            for(int i=0;i<c;i++){
-                ans = (ans * 3)%res;
-            }
-            ans = (ans * 2)%res;
+            ans = pow(3,c)*2; 
         }else{
-            for(int i=0;i<n/3;i++){
-                ans = (ans * 3)%res;
-            }
+            ans = pow(3,n/3);
         }
         return ans;
     }
-    
 };
